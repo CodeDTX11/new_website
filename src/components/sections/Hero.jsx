@@ -4,6 +4,7 @@ import { ScrollReveal } from '../common/ScrollReveal'
 export function Hero() {
   return (
     <section id="home" className="hero">
+      <div className="hero-decoration" aria-hidden="true" />
       <div className="container">
         <div className="hero-content">
           <ScrollReveal>
