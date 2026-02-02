@@ -63,17 +63,15 @@ export function About() {
           <div className="col-lg-10">
             {educationData.map((edu, index) => (
               <ScrollReveal key={edu.id} delay={700 + index * 100}>
-                <div className="card mb-3">
-                  <div className="card-body">
-                    <h4 className="card-title mb-1">{edu.degree}</h4>
-                    {edu.minor && <p className="text-muted mb-2">{edu.minor}</p>}
-                    <p className="text-accent mb-3">{edu.school}</p>
-                    <ul className="mb-0">
-                      {edu.highlights.map((highlight, i) => (
-                        <li key={i}>{highlight}</li>
-                      ))}
-                    </ul>
-                  </div>
+                <div className="education-card">
+                  <h4 className="education-degree">{edu.degree}</h4>
+                  {edu.minor && <p className="education-minor">{edu.minor}</p>}
+                  <p className="education-school">{edu.school}</p>
+                  <ul className="education-highlights">
+                    {edu.highlights.map((highlight, i) => (
+                      <li key={i}>{highlight}</li>
+                    ))}
+                  </ul>
                 </div>
               </ScrollReveal>
             ))}
