@@ -2,35 +2,37 @@ export const skillsData = {
   languages: [
     'Go',
     'Python',
+    'C++',
+    'C',
     'Java',
     'JavaScript',
-    'TypeScript',
-    'C++'
+    'TypeScript'
   ],
   frameworks: [
     'Spring Boot',
     'Angular',
-    'React'
+    'REST APIs'
   ],
   cloudDevOps: [
     'Kubernetes',
     'AWS',
-    'Docker',
+    'GitOps',
+    'MCP',
     'Helm',
     'ArgoCD',
-    'GitOps',
-    'Terraform'
+    'Docker',
+    'OIDC/IRSA'
   ],
   databases: [
-    'PostgreSQL',
-    'MongoDB'
+    'PostgreSQL'
   ],
   tools: [
     'Git',
-    'GitHub Actions',
     'Linux',
-    'MCP',
-    'LangGraph'
+    'Bash',
+    'HTML',
+    'CSS',
+    'Bootstrap'
   ]
 }
 
